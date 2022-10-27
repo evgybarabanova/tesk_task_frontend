@@ -18,7 +18,12 @@
   },
   "homepage": "https://github.com/evgybarabanova/tesk_task_frontend#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.4.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.26.0",
+    "eslint-plugin-react": "^7.31.10"
   }
 }
