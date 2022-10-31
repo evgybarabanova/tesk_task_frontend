@@ -1,5 +1,5 @@
-import searchNotes from './searchNotes'
+import searchAdress from './searchAdress'
 
 export {
-  searchNotes
+  searchAdress
 }
