@@ -56,6 +56,7 @@ export default function Menu() {
           Управление финансами
         </p>
       )} */}
+      
       <p>
         <img className="img-card-logout" src="logout.png" alt="logo" />
         Выход
