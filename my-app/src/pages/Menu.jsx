@@ -1,14 +1,13 @@
 import React, { useState } from "react";
-import { Route, Routes } from "react-router-dom";
-import Adress from "./Adress";
+import { Link } from "react-router-dom";
 import "./Menu.css";
 
 export default function Menu() {
 
-  const [menuVisible, setMenuVisible] = useState(false);
+  const [visible, setVisible] = useState(false);
 
-  const handleMenuVisibility = () => {
-    setMenuVisible(!menuVisible);
+  const handleVisibility = () => {
+    setVisible(!visible);
   };
 
   return (
@@ -18,13 +17,10 @@ export default function Menu() {
         <img className="img-card-home" src="home.png" alt="logo" />
         Главная
       </p>
-      <p>
+      <Link className="link" to="adress">
         <img className="img-card-search" src="search.png" alt="logo" />
         Поиск адресов
-        <Routes>
-          <Route path="adress" element={<Adress />}></Route>
-        </Routes>
-      </p>
+          </Link>
       <p>
         <img className="img-card-tables" src="tables.png" alt="logo" />
         Таблицы
@@ -41,10 +37,10 @@ export default function Menu() {
         <img className="img-card-vid" src="vid.png" alt="logo" />
         Виджеты
       </p>
-      <button className="setting" onClick={handleMenuVisibility}>
+      <p className="setting" onClick={handleVisibility}>
         <img className="img-card-setting" src="setting.png" alt="logo" />
         Настройки
-      </button>
+      </p>
       {/* {menuVisible && (
         
         <p>
@@ -56,7 +52,7 @@ export default function Menu() {
           Управление финансами
         </p>
       )} */}
-      
+
       <p>
         <img className="img-card-logout" src="logout.png" alt="logo" />
         Выход
