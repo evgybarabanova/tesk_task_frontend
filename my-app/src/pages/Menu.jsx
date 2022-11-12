@@ -11,11 +11,11 @@ export default function Menu() {
   };
 
   return (
-    <>
+    <nav>
       <h1>Меню</h1>
       <p>
         <img className="img-card-home" src="home.png" alt="logo" />
-        Главная
+        <Link to="/">Главная</Link>
       </p>
       <Link className="link" to="adress">
         <img className="img-card-search" src="search.png" alt="logo" />
@@ -41,8 +41,7 @@ export default function Menu() {
         <img className="img-card-setting" src="setting.png" alt="logo" />
         Настройки
       </p>
-      {/* {menuVisible && (
-        
+       {/* {menuVisible && (
         <p>
           <img className="img-card-1" src="1.png" alt="logo" />
           Настройки профиля
@@ -50,13 +49,14 @@ export default function Menu() {
         <p>
           <img className="img-card-2" src="2.png" alt="logo" />
           Управление финансами
-        </p>
-      )} */}
+        </p> 
+         )} */}
+     
 
       <p>
         <img className="img-card-logout" src="logout.png" alt="logo" />
         Выход
       </p>
-    </>
+    </nav>
   );
 }

@@ -15,11 +15,7 @@ export default function searchAdress(query) {
       }
     })
     .then((response) => {
-     // const { value } = response.data.suggestions
-
-     // return value
-     return response.data.suggestions
-
+      return response.data.suggestions
     })
     .catch((error) => {
       alert('error', error.response)

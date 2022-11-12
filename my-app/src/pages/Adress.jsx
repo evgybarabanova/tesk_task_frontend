@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { searchAdress } from '../logic'
+import "./Adress.css";
 
 export default function Adress() {
   const [values, setValues] = useState([])
@@ -25,18 +26,20 @@ export default function Adress() {
           <input
             type="search"
             name="query"
-            placeholder="search adress"
+            placeholder="Введите интересующий вас адрес"
             id="query"
           />
+           <img className="img-card" src="Vector (1).png" alt="logo" />
           <button
             className="home-page-header__search-button"
             type="submit"
           >
-            Search
+            Поиск
           </button>
         </div>
       </form>
-      <h1>Search adresses</h1>
+      <h1>Поиск адресов</h1>
+      <p>Введите интересующий вас адрес</p>
       <div>
         {values.map((value, idx) => {
           return ([

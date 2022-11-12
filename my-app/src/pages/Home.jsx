@@ -18,7 +18,8 @@ export default function Home() {
       </header>
       <main className="home-page-main">
         <Routes>
-          <Route path="/" element={<Menu />}></Route>
+          <Route path="/" element={<Menu />}>
+          </Route>
         </Routes>
       </main>
     </>
