@@ -1,19 +1,22 @@
-// import './App.css';
-import { Routes, Route } from 'react-router-dom';
-import Adress from './pages/Adress';
-import Home from './pages/Home';
+import { Routes, Route } from 'react-router-dom'
+import Header from './components/Header'
+import Menu from './components/Menu'
+import Home from './pages/Home'
+import Adress from './pages/Address'
+import './App.css'
 
 function App() {
+  return <div className="App">
+    <Header />
+    <div className='App-content'>
+      <Menu />
 
-
-  return (
-    <div className="container">
       <Routes>
         <Route path="/" element={<Home />}></Route>
-        <Route path="adress" element={<Adress />}></Route>
+        <Route path="address" element={<Adress />}></Route>
       </Routes>
     </div>
-  );
+  </div>
 }
 
-export default App;
+export default App
