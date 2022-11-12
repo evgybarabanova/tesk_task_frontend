@@ -10,7 +10,7 @@ export default function Menu() {
     setVisible(!visible);
   };
 
-  return <div>
+  return <div className="menu">
     <h2>Меню</h2>
     <menu class="menu-list">
       <li><Link to="/"><img src="home.png" alt="logo" /> Главная</Link></li>

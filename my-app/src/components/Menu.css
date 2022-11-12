@@ -1,3 +1,12 @@
 .menu-list {
     list-style-type: none;
 }
+
+.menu{
+    width: 300px;
+    height: 944px;
+    left: 0px;
+    top: 81px;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0px 0px 5px rgba(2, 0, 96, 0.25);
+}
