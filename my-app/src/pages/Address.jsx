@@ -20,6 +20,8 @@ export default function Adress() {
   }
 
   return <main>
+     <p className='title'>Поиск адресов</p>
+    <p className='text'>Введите интересующий вас адрес</p>
     <form className="home-page-main-form" onSubmit={handleSearchAdress}>
       <div className="home-page-main__search">
         <input
@@ -28,17 +30,16 @@ export default function Adress() {
           placeholder="Введите интересующий вас адрес"
           id="query"
         />
-        <img className="img-card" src="Vector (1).png" alt="logo" />
         <button
           className="home-page-header__search-button"
           type="submit"
         >
+        <img className="img-card" src="Vector (1).png" alt="logo" />
           Поиск
         </button>
       </div>
     </form>
-    <h1>Поиск адресов</h1>
-    <p>Введите интересующий вас адрес</p>
+  
     <div>
       {values.map((value, idx) => {
         return ([

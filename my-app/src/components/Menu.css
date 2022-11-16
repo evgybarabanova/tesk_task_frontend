@@ -2,6 +2,19 @@
     list-style-type: none;
 }
 
+.menu-title{
+width: 65px;
+height: 24px;
+left: 32px;
+top: 24px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 24px;
+color: #1C1C1E;
+}
+
 .menu{
     width: 300px;
     height: 944px;
@@ -9,4 +22,10 @@
     top: 81px;
     background: rgba(255, 255, 255, 0.05);
     box-shadow: 0px 0px 5px rgba(2, 0, 96, 0.25);
+}
+
+
+button{
+  border: none;  
+  background-color: transparent;
 }
